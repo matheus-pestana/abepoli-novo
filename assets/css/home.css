@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/antena-de-cor-verde-branco-abelha\ 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-elements {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+
+.senai {
+    display: flex;
+    justify-content: end;
+    height: 100%;
+}
+
+.senai img {
+    width: 75%;
+}
+
+.nav h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 4rem;
+    width: 50%;
+}
+
+.nav p {
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.texts {
+    width: 50%;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px 20px;
+}
