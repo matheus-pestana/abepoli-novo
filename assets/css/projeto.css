@@ -126,7 +126,7 @@ body {
     }
 
     .nav-links.active {
-        max-height: 500px;
+        max-height: 500px;  
         opacity: 1;
         transform: translateY(0);
         visibility: visible;
@@ -179,7 +179,7 @@ body {
 
 .projeto p {
     width: 50%;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 1vw, 2rem);
     line-height: 1.5;
     color: #333;
 }
@@ -210,8 +210,7 @@ body {
 }
 
 .sobre-content p {
-    width: 50%;
-    font-size: 2rem;
+    width: 50%;font-size: clamp(1.5rem, 1vw, 2rem);
     line-height: 1.5;
     color: black;
 }
@@ -249,8 +248,7 @@ body {
 
 .abelhas-content p {
     text-align: center;
-    width: 50%;
-    font-size: 2rem;
+    width: 50%;font-size: clamp(1.5rem, 1vw, 2rem);
     line-height: 1.5;
     color: black;
 }
@@ -282,8 +280,7 @@ body {
 }
 
 .polinizacao-content p {
-    width: 50%;
-    font-size: 2rem;
+    width: 50%;font-size: clamp(1.5rem, 1vw, 2rem);
     line-height: 1.5;
     color: black;
 }
@@ -307,8 +304,7 @@ body {
 
 .biodiversidade p {
     width: 75%;
-    text-align: center;
-    font-size: 2rem;
+    text-align: center;font-size: clamp(1.5rem, 1vw, 2rem);
     line-height: 1.5;
     color: black;
 }
