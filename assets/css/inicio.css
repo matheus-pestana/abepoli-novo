@@ -40,6 +40,7 @@ body {
     align-items: center;
     text-decoration: none;
     gap: 40px;
+    margin: 0;
 }
 
 .nav-links ul li a {
@@ -136,6 +137,7 @@ body {
         flex-direction: column;
         width: 100%;
         gap: 20px;
+        margin: 0;
     }
 
     .nav-links .senai {
@@ -144,75 +146,224 @@ body {
     }
 }
 
-/* ESTILO DO MAIN CONTENT */
-
-#main-content {
+.banner {
+    position: relative;
+    /* necessário para posicionar o ::before */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-evenly;
+    height: 50vh;
     padding: 20px;
+    z-index: 1;
+    /* garantir que o conteúdo fique acima do fundo */
+    overflow: hidden;
+    /* evita que o fundo transborde */
+    background-color: black;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/antena-de-cor-verde-branco-abelha\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.75;
+    /* ajuste a opacidade como desejar */
+    z-index: -1;
+    /* fundo atrás do conteúdo */
+}
+
+
+.banner h1 {
+    width: 30%;
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+    text-align: left;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    color: white;
+    text-align: left;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
     gap: 20px;
 }
 
-.title {
-    font-size: 44px;
-    font-weight: bold;
+.bannerButtons {
+    color: white;
+    background-color: #35B15A;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .2s;
 }
 
-.role {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
+.bannerButtons a {
+    color: white;
+    text-decoration: none;
 }
 
-.orientadores {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    gap: 5vw;
+.bannerButtons:hover {
+    background-color: #21723a;
+    transform: scale(1.05);
+    transition: .2s;
 }
 
-.orientador {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.orientador p {
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-.orientador img {
-    width: 200px;
-    height: 200px;
-}
-
-.desenvolvedores {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    gap: 5vw;
-}
-
-.desenvolvedor {
+.containers {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 100px;
+    gap: 100px;
+    padding: 20px;
+}
+
+.missao {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 50px;
+}
+
+.missaoImg {
+    min-width: 350px;
+    width: 50%;
+    height: auto;
+}
+
+.missaoContent {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.missaoText p {
+    font-size: clamp(1rem, 5vw, 3rem);
+    color: black;
+    text-align: left;
+}
+
+.icones {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5vw;
+}
+
+.educacao,
+.abelhas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.educacao img,
+.abelhas img {
+    width: 100%;
+    height: auto;
+}
+
+.educacao p,
+.abelhas p {
     text-align: center;
 }
 
-.desenvolvedor p {
-    font-size: 20px;
-    margin-top: 10px;
+.tema {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
 }
 
-.desenvolvedor img {
-    width: 200px;
-    height: 200px;
+.tema h1 {
+    font-size: clamp(2rem, 3vw, 4rem);
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.temas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.biodiversidade,
+.abelhasFerrao,
+.polinizacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.biodiversidade img,
+.abelhasFerrao img,
+.polinizacao img {
+    width: 75%;
+}
+
+.temas p {
+    font-size: clamp(1rem, 1.5vw, 3rem);
+    color: black;
+    text-align: center;
+}
+
+.projeto {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.projetoContent {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projetoTitle {
+    font-size: clamp(1rem, 1.5vw, 4rem);
+    font-weight: bold;
+    text-align: center;
+}
+
+.projetoText {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    color: black;
+    text-align: center;
+}
+
+.projetoImg {
+    width: 30%;
+    border-radius: 30px;
+    box-shadow: 10px 9px 0px -2px black;
+    -webkit-box-shadow: 10px 9px 2px -2px black;
+    -moz-box-shadow: 10px 9px 0px -2px black;
 }
 
 /* ESTILO DO FOOTER */
@@ -239,6 +390,8 @@ body {
     align-items: center;
     text-decoration: none;
     gap: 40px;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-links ul li {
@@ -282,4 +435,3 @@ body {
 .insta {
     width: 30px;
 }
-

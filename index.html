@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/inicio.css">
+    <link rel="stylesheet" href="./assets/css/inicio_responsivo.css">
     <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,29 +17,106 @@
 
 <body>
 
-    <nav>
-        <div class="nav">
-            <div class="nav-elements">
-                <div class="texts">
-                    <h1>Projeto Restaura Natureza</h1>
-                    <p>Nessa missão de restauração e educação</p>
-                </div>
-                <div class="links">
-                    <button href="projeto.html">Conheço nosso projeto</button>
-                    <button>Nosso Instagram</button>
-                </div>
-            </div>
-            <div class="senai">
-                <img src="./assets/img/senaiLogo.png" alt="">
-            </div>
+    <nav id="navbar">
+        <img class="logo" src="./assets/img/logo_menor.png" alt="">
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <ul>
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="projeto.html">Projeto</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+            <img class="senai" src="./assets/img/senaiLogo.png" alt="">
         </div>
     </nav>
 
-    <button onclick="topFunction()" id="btnTopo" title="Voltar ao topo">&#8593</button>
+    <div id="main-content">
+        <div class="banner">
+            <h1>Projeto Restaura Natureza</h1>
+            <p>Nessa missão de restauração e educação</p>
+            <div class="buttons">
+                <button class="bannerButtons"><a href="projeto.html">Conheça nosso projeto</a></button>
+                <button class="bannerButtons"><a href="https://www.instagram.com/abelhasnativas_cacapava/"
+                        target="_blank">Nosso Instagram</a></button>
+            </div>
+        </div>
 
-    <footer>
+        <div class="containers">
+            <div class="missao">
+                <img class="missaoImg" src="./assets/img/missao.png" alt="">
+                <div class="missaoContent">
+                    <div class="missaoText">
+                        <p>🌻Nossa missão é restaurar, educar e preservar</p>
+                    </div>
+                    <div class="icones">
+                        <div class="educacao">
+                            <img src="./assets/img/educacao.png" alt="">
+                            <p>Educação Ambiental</p>
+                        </div>
+                        <div class="abelhas">
+                            <img src="./assets/img/abelhas.png" alt="">
+                            <p>Abelhas Nativas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="tema">
+                <h1>Temas do Projeto</h1>
+                <div class="temas">
+                    <div class="biodiversidade">
+                        <img src="./assets/img/biodiversidade.png" alt="">
+                        <p>Biodiversidade</p>
+                    </div>
+                    <div class="abelhasFerrao">
+                        <img src="./assets/img/abelhasFerrao.png" alt="">
+                        <p>Abelhas sem Ferrão</p>
+                    </div>
+                    <div class="polinizacao">
+                        <img src="./assets/img/polinizacaoTema.png" alt="">
+                        <p>Polinização</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projeto">
+                <div class="projeto-content">
+                    <p class="projetoTitle">Qual o objetivo deste projeto?<br></p>
+                    <p class="projetoText">
+                        O projeto “Abelhas Nativas SESI-SENAI Caçapava” tem como objetivo ensinar sobre a importância
+                        das abelhas sem ferrão para a natureza. A ideia é mostrar que, conhecendo mais sobre elas, as
+                        pessoas vão querer proteger. São feitas atividades como palestras, oficinas, rodas de conversa e
+                        também o plantio de árvores. As abelhas ajudam na polinização, que faz nascer mais plantas e
+                        alimentos, além de produzir mel, própolis e cera. O projeto também compartilha tudo nas redes
+                        sociais, para que mais pessoas aprendam a importância de cuidar das abelhas e do meio ambiente.
+                    </p>
+                </div>
+                <img class="projetoImg" src="./assets/img/projeto.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <img class="senai" src="./assets/img/senaiLogo.png" alt="">
+        <div class="footer-links">
+            <ul>
+                <li>
+                    <img class="insta" src="./assets/img/instagram.png" alt="">
+                    <a href="https://www.instagram.com/abelhasnativas_cacapava/"
+                        target="_blank">@abelhasnativas_cacapava</a>
+                </li>
+                <li>
+                    <img class="insta" src="./assets/img/instagram.png" alt="">
+                    <a href="https://www.instagram.com/abepoli/" target="_blank">@abepoli</a>
+                </li>
+            </ul>
+        </div>
     </footer>
+    <script src="./assets/js/hamburguinho.js"></script>
 </body>
 
 </html>

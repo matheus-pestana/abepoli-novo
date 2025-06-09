@@ -1,0 +1,126 @@
+@media (max-width: 1300px) {
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links ul li a {
+        font-size: 20px;
+    }
+
+    .senai {
+        width: 150px;
+    }
+
+    .footer-links ul {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .footer-links ul li a {
+        font-size: 20px;
+    }
+
+    .footer-links ul li {
+        padding: 15px;
+    }
+
+    .projeto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abelhas-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .polinizacao-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* RESPONSIVIDADE PARA CELULARES (largura até 768px) */
+@media (max-width: 768px) {
+
+    #navbar {
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links ul li a {
+        font-size: 18px;
+    }
+
+    .senai {
+        width: 120px;
+    }
+
+    #carouselExampleRide {
+    width: 100%;
+}
+
+    .projeto p {
+        width: 75%;
+        text-align: center;
+    }
+
+    .sobre-content p {
+        width: 75%;
+        text-align: center;
+    }
+
+    .abelhas-content p {
+        width: 75%;
+        text-align: center;
+    }
+
+    .polinizacao-content p {
+        width: 75%;
+        text-align: center;
+    }
+
+    .biodiversidade p {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    #footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+        text-align: center;
+        height: auto;
+    }
+
+    .footer-links ul {
+        gap: 15px;
+    }
+
+    .footer-links ul li {
+        padding: 10px;
+    }
+
+    .footer-links ul li a {
+        font-size: 16px;
+    }
+
+    .insta {
+        width: 25px;
+    }
+}

@@ -1,0 +1,127 @@
+@media (max-width: 1300px) {
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links ul li a {
+        font-size: 20px;
+    }
+
+    .senai {
+        width: 150px;
+    }
+
+    .footer-links ul {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .footer-links ul li a {
+        font-size: 20px;
+    }
+
+    .footer-links ul li {
+        padding: 15px;
+    }
+
+    .missao {
+        flex-direction: column;
+    }
+
+    .missaoContent {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .missaoText p {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .icones {
+        justify-content: center;
+    }
+}
+
+/* RESPONSIVIDADE PARA CELULARES (largura até 768px) */
+@media (max-width: 768px) {
+
+    #navbar {
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links ul li a {
+        font-size: 18px;
+    }
+
+    .senai {
+        width: 120px;
+    }
+
+    .missaoContent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icones {
+        width: 100%;
+    }
+
+    .temas {
+        flex-direction: column;
+    }
+
+    .biodiversidade img,
+    .abelhasFerrao img,
+    .polinizacao img {
+        width: 100%;
+        height: auto;
+    }
+
+    .projeto {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .projetoImg {
+        width: 50%;
+    }
+
+    #footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+        text-align: center;
+        height: auto;
+    }
+
+    .footer-links ul {
+        gap: 15px;
+    }
+
+    .footer-links ul li {
+        padding: 10px;
+    }
+
+    .footer-links ul li a {
+        font-size: 16px;
+    }
+
+    .insta {
+        width: 25px;
+    }
+}

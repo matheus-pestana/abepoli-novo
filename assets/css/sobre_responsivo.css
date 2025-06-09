@@ -1,0 +1,128 @@
+/* RESPONSIVIDADE PARA TABLETS (largura até 1024px) */
+@media (max-width: 1300px) {
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links ul li a {
+        font-size: 20px;
+    }
+
+    .senai {
+        width: 150px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .role {
+        font-size: 24px;
+    }
+
+    .orientadores,
+    .desenvolvedores {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .orientador img,
+    .desenvolvedor img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .orientador p,
+    .desenvolvedor p {
+        font-size: 18px;
+    }
+
+    .footer-links ul {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .footer-links ul li a {
+        font-size: 20px;
+    }
+
+    .footer-links ul li {
+        padding: 15px;
+    }
+}
+
+/* RESPONSIVIDADE PARA CELULARES (largura até 768px) */
+@media (max-width: 768px) {
+
+    #navbar {
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links ul li a {
+        font-size: 18px;
+    }
+
+    .senai {
+        width: 120px;
+    }
+
+    .title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .role {
+        font-size: 20px;
+    }
+
+    .orientadores,
+    .desenvolvedores {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .orientador img,
+    .desenvolvedor img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .orientador p,
+    .desenvolvedor p {
+        font-size: 16px;
+    }
+
+    #footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+        text-align: center;
+        height: auto;
+    }
+
+    .footer-links ul {
+        gap: 15px;
+    }
+
+    .footer-links ul li {
+        padding: 10px;
+    }
+
+    .footer-links ul li a {
+        font-size: 16px;
+    }
+
+    .insta {
+        width: 25px;
+    }
+}
